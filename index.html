@@ -1,0 +1,237 @@
+<!DOCTYPE HTML>
+<html>
+	<head>
+		<title>Portofolio | Adelya Putri Yunita</title>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+		<link rel="stylesheet" href="assets/css/main.css" />
+		<noscript><link rel="stylesheet" href="assets/css/noscript.css" /></noscript>
+		<style>
+			/* CSS khusus untuk kotak logo tools - SEGI EMPAT (TIDAK BULAT) */
+			#two .image {
+				border-radius: 0 !important; /* Menghilangkan border radius default template */
+				background: #2e3450; /* Background gelap agar kontras */
+				width: 100% !important; /* Memastikan lebar maksimal */
+				max-width: 600px !important; /* Menambah batas lebar agar tidak terpotong */
+			}
+
+			#two .image:before {
+				display: none; /* Menghilangkan overlay lingkaran jika ada */
+			}
+
+			.tool-grid {
+				display: grid;
+				grid-template-columns: repeat(3, 1fr);
+				gap: 15px;
+				padding: 20px;
+			}
+
+			.tool-box {
+				background: rgba(255, 255, 255, 0.05); /* Kotak transparan halus */
+				border: 1px solid rgba(255, 255, 255, 0.1);
+				border-radius: 0; /* Pastikan kotak dalam juga tidak bulat */
+				padding: 20px 10px;
+				text-align: center;
+				transition: transform 0.3s ease;
+				display: flex;
+				flex-direction: column;
+				align-items: center;
+				justify-content: center;
+			}
+
+			.tool-box:hover {
+				background: rgba(255, 255, 255, 0.1);
+				transform: translateY(-5px);
+			}
+
+			.tool-box i {
+				font-size: 2.5em;
+				color: #ffffff;
+				margin-bottom: 10px;
+				display: block;
+				height: 50px; 
+				line-height: 50px;
+			}
+
+			.tool-box span {
+				font-size: 0.7em;
+				font-weight: bold;
+				text-transform: uppercase;
+				letter-spacing: 1px;
+				color: #ffffff;
+				display: block;
+			}
+		</style>
+	</head>
+	<body class="is-preload">
+
+		<div id="page-wrapper">
+
+			<header id="header" class="alt">
+				<h1><a href="index.html">Adelya Putri Yunita</a></h1>
+				<nav>
+					<a href="#footer">Kontak</a>
+				</nav>
+			</header>
+
+			<section id="banner">
+				<div class="inner">
+					<div class="logo"><span class="icon fa-laptop-code"></span></div>
+					<h2>Adelya Putri Yunita</h2>
+					<p>Information Systems Student | IT Developer | Software QA | HR Enthusiast</p>
+				</div>
+			</section>
+
+			<section id="wrapper">
+
+				<section id="one" class="wrapper spotlight style1">
+					<div class="inner">
+						<a href="#" class="image"><img src="images/pic01.jpg" alt="Foto Adelya" /></a>
+						<div class="content">
+							<h2 class="major">Tentang Saya</h2>
+							<p>Mahasiswa Sistem Informasi dengan latar belakang Teknik Komputer dan Jaringan. Saya memiliki minat besar dalam <b>Software Development Life Cycle (SDLC)</b>, khususnya pada peran <b>Software Quality Assurance</b> dan <b>IT Developer</b>. Dengan kombinasi ketelitian administratif yang saya asah melalui pengalaman operasional dan pemahaman teknis jaringan serta sistem, saya berfokus pada memastikan kualitas perangkat lunak yang unggul serta manajemen data yang efisien.</p>
+						</div>
+					</div>
+				</section>
+
+				<section id="two" class="wrapper alt spotlight style2">
+					<div class="inner">
+						<div class="image">
+							<div class="tool-grid">
+								<div class="tool-box">
+									<i class="fab fa-php"></i>
+									<span>PHP</span>
+								</div>
+								<div class="tool-box">
+									<i class="fas fa-database"></i>
+									<span>SQL</span>
+								</div>
+								<div class="tool-box">
+									<i class="fas fa-vial"></i>
+									<span>Testing</span>
+								</div>
+								<div class="tool-box">
+									<i class="fab fa-html5"></i>
+									<span>HTML5</span>
+								</div>
+								<div class="tool-box">
+									<i class="fab fa-css3-alt"></i>
+									<span>CSS3</span>
+								</div>
+								<div class="tool-box">
+									<i class="fab fa-js"></i>
+									<span>JavaScript</span>
+								</div>
+								<div class="tool-box">
+									<i class="fas fa-network-wired"></i>
+									<span>Network</span>
+								</div>
+								<div class="tool-box">
+									<i class="fas fa-project-diagram"></i>
+									<span>API</span>
+								</div>
+								<div class="tool-box">
+									<i class="fas fa-file-excel"></i>
+									<span>Excel</span>
+								</div>
+							</div>
+						</div>
+						<div class="content">
+							<h2 class="major">Keahlian Utama</h2>
+							<p>Memadukan aspek teknis pengembangan sistem dengan ketelitian manajemen sumber daya manusia.</p>
+							<ul>
+								<li><b>Software QA & Dev:</b> Pemahaman SDLC, Pengujian Manual & Automated (PHPUnit), Pengolahan Database SQL, dan Dasar-dasar Debugging.</li>
+								<li><b>IT & Networking:</b> Troubleshooting System, Konfigurasi Jaringan WiFi, dan Pemeliharaan Perangkat keras.</li>
+								<li><b>Pemrograman & Web:</b> Dasar-dasar HTML, CSS, JavaScript, PHP, dan Integrasi API (Application Programming Interface).</li>
+								<li><b>HR & Admin:</b> Rekapitulasi Data (Excel), Manajemen Dokumen, Serta Komunikasi Interpersonal yang Efektif.</li>
+							</ul>
+						</div>
+					</div>
+				</section>
+
+				<section id="three" class="wrapper spotlight style3">
+					<div class="inner">
+						<a href="#" class="image"><img src="images/experience.jpg" alt="Pengalaman Kerja" /></a>
+						<div class="content">
+							<h2 class="major">Pengalaman Kerja</h2>
+							<p><b>RIZZNET WIRELESS NETWORK (PKL)</b><br>
+							Juni 2021 – Desember 2021<br>
+							Melakukan instalasi, konfigurasi jaringan WiFi, serta mengelola dokumentasi laporan kerja harian dan catatan perbaikan.</p>
+							
+							<p><b>ES SINOM CENTHINI (Crew Outlet)</b><br>
+							September 2024 – Februari 2025<br>
+							Menangani pelayanan pelanggan, manajemen stok barang (inventory), dan berkolaborasi dalam tim untuk mencapai target operasional.</p>
+						</div>
+					</div>
+				</section>
+
+				<section id="four" class="wrapper alt style1">
+					<div class="inner">
+						<h2 class="major">Pendidikan</h2>
+						<div class="row">
+							<div class="col-6 col-12-medium">
+								<h3>S1 Sistem Informasi</h3>
+								<p><b>Universitas Nusantara PGRI Kediri</b> (2023 - Sekarang).<br>
+								Fokus pada analisis sistem, manajemen basis data, dan pengembangan solusi teknologi informasi.</p>
+							</div>
+							<div class="col-6 col-12-medium">
+								<h3>SMK Teknik Komputer & Jaringan</h3>
+								<p><b>SMK Negeri 1 Boyolangu</b> (2020 - 2023).<br>
+								Mempelajari infrastruktur jaringan, perakitan komputer, dan keamanan sistem komputer dasar.</p>
+							</div>
+						</div>
+					</div>
+				</section>
+
+				<section id="five" class="wrapper style2">
+					<div class="inner">
+						<h2 class="major">Projek Unggulan</h2>
+						<section class="features">
+							<article>
+								<a href="#" class="image"><img src="images/project_qa.jpg" alt="Project QA" /></a>
+								<h3 class="major">Software QA: Automated Testing (PHPUnit)</h3>
+								<p>Melakukan pengujian teknis pada aplikasi <i>Pencari Jadwal Sholat</i> melalui 14 skenario uji (TC1-TC14). Mencakup <b>Unit Testing</b> untuk validasi API Key, <b>Integration Testing</b> untuk respons API Aladhan, serta <b>Data Validation</b> menggunakan Regex untuk format waktu (HH:MM).</p>
+							</article>
+							<article>
+								<a href="#" class="image"><img src="images/project_sholat.jpg" alt="Pencari Jadwal Sholat" /></a>
+								<h3 class="major">Pencari Jadwal Sholat (Integrasi API)</h3>
+								<p>Membangun aplikasi web responsif menggunakan API Aladhan untuk menampilkan jadwal sholat real-time. Projek ini berfungsi sebagai basis utama dalam pengujian <i>automated testing</i> yang saya lakukan.</p>
+							</article>
+							<article>
+								<a href="#" class="image"><img src="images/project_crud.jpg" alt="Project CRUD" /></a>
+								<h3 class="major">Manajemen Data E-commerce (CRUD)</h3>
+								<p>Membangun sistem pengelolaan stok barang digital berbasis PHP dan SQL yang mendukung operasional Create, Read, Update, dan Delete untuk efisiensi data produk.</p>
+							</article>
+						</section>
+					</div>
+				</section>
+
+			</section>
+
+			<section id="footer">
+				<div class="inner">
+					<h2 class="major">Hubungi Saya</h2>
+					<p>Saya terbuka untuk diskusi mengenai peluang magang maupun kolaborasi di bidang IT Development, Software QA, atau Human Resource. Mari terhubung!</p>
+					<ul class="contact">
+						<li class="icon solid fa-home">Tulungagung, Jawa Timur</li>
+						<li class="icon solid fa-phone">087777875868</li>
+						<li class="icon solid fa-envelope"><a href="mailto:adelyapy23@gmail.com">adelyapy23@gmail.com</a></li>
+						<li class="icon brands fa-linkedin"><a href="https://www.linkedin.com/in/adelya-putri-yunita/">Profil LinkedIn</a></li>
+					</ul>
+					<ul class="copyright">
+						<li>&copy; Adelya Putri Yunita. All rights reserved.</li>
+					</ul>
+				</div>
+			</section>
+
+		</div>
+
+		<script src="assets/js/jquery.min.js"></script>
+		<script src="assets/js/jquery.scrollex.min.js"></script>
+		<script src="assets/js/browser.min.js"></script>
+		<script src="assets/js/breakpoints.min.js"></script>
+		<script src="assets/js/util.js"></script>
+		<script src="assets/js/main.js"></script>
+
+	</body>
+</html>
