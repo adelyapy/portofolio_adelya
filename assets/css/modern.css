@@ -99,3 +99,13 @@
   .hero-kicker,.hero-copy>*:not(.actions),.hero-copy .actions,.portrait-card,.hero-aside{animation:none!important}
   .scroll-reveal{opacity:1;translate:none;scale:1;transition:none!important}
 }
+
+/* Device-independent directional icons */
+.ui-arrow{display:inline-block!important;width:1em;height:1em;margin-left:.42em;font-size:.82em!important;line-height:1!important;text-align:center;vertical-align:-.04em;transform-origin:center;color:currentColor;font-style:normal!important;speak:none}
+.ui-arrow-ne{transform:rotate(45deg)}
+.ui-arrow-se{transform:rotate(135deg)}
+.ui-arrow-up{transform:none}
+.header-cta .ui-arrow,.hero-aside .ui-arrow,.contact-links .ui-arrow{color:var(--cyan)}
+.hero-aside b .ui-arrow{margin-left:0}
+.contact-links> a > i.ui-arrow{position:static;font-family:"Font Awesome 5 Free"!important;font-weight:900!important}
+.copyright .ui-arrow{font-size:.8em!important}
