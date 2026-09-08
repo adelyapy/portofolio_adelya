@@ -36,13 +36,13 @@
   .hero-grid{gap:34px}
   .portrait-card{width:100%;min-height:0;aspect-ratio:4/5}
   .portrait-card img{height:calc(100% - 70px)}
+  .portrait-footer{padding-bottom:4px}
   .hero-aside{display:grid}
   .section-head h2{font-size:clamp(2.75rem,14vw,4.3rem);overflow-wrap:anywhere}
-  .featured-project{border-radius:20px}
-  .featured-copy{padding:28px 22px}
-  .featured-copy h3{font-size:clamp(2.7rem,14vw,4rem);overflow-wrap:anywhere}
-  .featured-visual{padding:14px}
-  .featured-visual>img{height:auto;aspect-ratio:16/10}
+  :is(#skills,#experience) .section-head.split{row-gap:16px}
+  :is(#skills,#experience) .section-head>div>p{margin-block:0}
+  :is(#skills,#experience) .section-head.split h2{margin-block:14px 0}
+  :is(#skills,#experience) .section-intro{margin-block:0 32px}
   .project-grid{grid-template-columns:1fr;gap:24px;margin-top:42px}
   .project-card{border-radius:18px}
   .project-body{min-height:0;padding:26px 22px}
@@ -100,12 +100,38 @@
   .scroll-reveal{opacity:1;translate:none;scale:1;transition:none!important}
 }
 
-/* Device-independent directional icons */
-.ui-arrow{display:inline-block!important;width:1em;height:1em;margin-left:.42em;font-size:.82em!important;line-height:1!important;text-align:center;vertical-align:-.04em;transform-origin:center;color:currentColor;font-style:normal!important;speak:none}
-.ui-arrow-ne{transform:rotate(45deg)}
-.ui-arrow-se{transform:rotate(135deg)}
-.ui-arrow-up{transform:none}
+/* Stable directional icons: CSS-drawn, independent of device fonts. */
+.ui-arrow{display:inline-block;position:relative;width:.78em;height:.78em;margin-left:.42em;flex:0 0 .78em;color:currentColor;vertical-align:-.08em;transform-origin:center}
+.ui-arrow::before{content:"";position:absolute;left:.08em;top:50%;width:.62em;height:2px;background:currentColor;border-radius:2px;transform:translateY(-50%)}
+.ui-arrow::after{content:"";position:absolute;right:.05em;top:50%;width:.34em;height:.34em;border-top:2px solid currentColor;border-right:2px solid currentColor;transform:translateY(-50%) rotate(45deg);transform-origin:center}
+.ui-arrow-ne{transform:rotate(-45deg)}
+.ui-arrow-se{transform:rotate(45deg)}
+.ui-arrow-up{transform:rotate(-90deg)}
 .header-cta .ui-arrow,.hero-aside .ui-arrow,.contact-links .ui-arrow{color:var(--cyan)}
 .hero-aside b .ui-arrow{margin-left:0}
-.contact-links> a > i.ui-arrow{position:static;font-family:"Font Awesome 5 Free"!important;font-weight:900!important}
-.copyright .ui-arrow{font-size:.8em!important}
+.copyright .ui-arrow{font-size:.8em;margin-left:.35em}
+
+/* Keep the hero contact list in one column at every breakpoint. */
+.hero-aside{
+  display:grid;
+  grid-template-columns:minmax(0,1fr);
+  min-width:0;
+  align-items:stretch;
+}
+.hero-aside>p{
+  grid-column:1/-1;
+  margin:0;
+  padding:15px 0;
+}
+.hero-aside>a{
+  grid-template-columns:24px minmax(0,1fr) auto;
+  min-width:0;
+  min-height:50px;
+  column-gap:12px;
+  padding-right:4px;
+}
+.hero-aside>a>span{min-width:0}
+.hero-aside>a>b{justify-self:end}
+@media(max-width:1050px){
+  .hero-aside>a{padding:18px 4px 18px 0}
+}
